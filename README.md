@@ -2,7 +2,7 @@
 **向Doug Lea致敬**  
 
 ![Doug Lea](http://ifeve.com/wp-content/uploads/2013/05/2934349b033b5bb502db9e8436d3d539b600bcb8.jpg)  
-
+感谢Doug Lea的在并发领域的卓越工作，让JVM平台程序员并发编程变得容易
 
 ## Java多线程使用
 
@@ -23,13 +23,16 @@
 
 
 #### 三种同步技术比较  
- 性能 便捷性等 
+ 性能 便捷性  并发程度
 
 ### volatile关键字
-计算机体系结构和java内存模型 
-volatile关键字的语义（可见性）     
-使用volatile经典使用场景 
-
+1. 计算机体系结构和java内存模型 
+    JSR-133规范  
+    可见性  有序性 原子性 ha
+2. volatile关键字的语义（可见性）     
+  
+3. 使用volatile经典场景 
+    
 
 
 ### 线程间通信
@@ -111,8 +114,11 @@ volatile关键字的语义（可见性）
 
 2.[The Java Memory Model 站点](http://www.cs.umd.edu/~pugh/java/memoryModel/)
 
-[Patterns for Concurrent, Parallel, and Distributed Systems] (http://www.cs.wustl.edu/~schmidt/patterns-ace.html)  
+3.[Patterns for Concurrent, Parallel, and Distributed Systems] (http://www.cs.wustl.edu/~schmidt/patterns-ace.html)  
 [Concurrency talk given at Scaleconf] (http://shairosenfeld.com/concurrency.html)
+
+4.[Java并发编程艺术](http://www.duokan.com/book/94743)   
+5.[实战Java高并发程序设计](http://www.duokan.com/book/118009)
 
 
 

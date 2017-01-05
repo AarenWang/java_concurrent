@@ -28,12 +28,11 @@
 ### volatile关键字
 1. 计算机体系结构和java内存模型 
     JSR-133规范  
-    可见性  有序性 原子性 ha
+    可见性  有序性 原子性 happen-before
 2. volatile关键字的语义（可见性）     
   
 3. 使用volatile经典场景 
     
-
 
 ### 线程间通信
  1. 使用Object对象的wait()和notify方法实现线程通信
@@ -73,6 +72,8 @@
 
 ## 阻塞容器 
 1. AbstractQueuedSynchronizer 基于FIFO对列的阻塞锁和同步工具类框架  
+[原始论文](http://gee.cs.oswego.edu/dl/papers/aqs.pdf)
+
 2. ArrayBlockingQueue DelayQueue 等一堆[BlockingQueue](http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/BlockingQueue.html) 实现类
 
 ## 高级同步工具
@@ -110,15 +111,14 @@
 
 
 **参考资料**   
-1.[阿里Java并发编程培训](http://wenku.baidu.com/link?url=LR9AGCKKiyMhHKGCG60XrlqtMWTr3-GBVcgyMWjN2ro6d2Vid36nSQ37Re4dhMmq2bs7Udqf9qDQs1OwLn0Sma3Q0e5UHhkQ-ujxnABHXU3)
-
-2.[The Java Memory Model 站点](http://www.cs.umd.edu/~pugh/java/memoryModel/)
-
+1.[阿里Java并发编程培训](http://wenku.baidu.com/link?url=LR9AGCKKiyMhHKGCG60XrlqtMWTr3-GBVcgyMWjN2ro6d2Vid36nSQ37Re4dhMmq2bs7Udqf9qDQs1OwLn0Sma3Q0e5UHhkQ-ujxnABHXU3)   
+2.[The Java Memory Model 站点](http://www.cs.umd.edu/~pugh/java/memoryModel/)  
 3.[Patterns for Concurrent, Parallel, and Distributed Systems] (http://www.cs.wustl.edu/~schmidt/patterns-ace.html)  
-[Concurrency talk given at Scaleconf] (http://shairosenfeld.com/concurrency.html)
 
-4.[Java并发编程艺术](http://www.duokan.com/book/94743)   
-5.[实战Java高并发程序设计](http://www.duokan.com/book/118009)
+4.[Concurrency talk given at Scaleconf] (http://shairosenfeld.com/concurrency.html)  
+5.[Java并发编程艺术](http://www.duokan.com/book/94743)    
+6.[实战Java高并发程序设计](http://www.duokan.com/book/118009)   
+7.[Java 7 concurrency cookbook](http://ifeve.com/java-7-concurrency-cookbook/)
 
 
 

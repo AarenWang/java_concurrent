@@ -32,8 +32,9 @@ volatile关键字的语义（可见性）
 
 
 
-### 使用Object对象的wait()和notify方法实现线程通信
- 使用wait和notify实现生产者和消费者
+### 线程间通信
+ 1. 使用Object对象的wait()和notify方法实现线程通信
+  实现生产者和消费者
 
 
 ## JUC线程池和任务执行框架
@@ -57,8 +58,9 @@ volatile关键字的语义（可见性）
  3. AtomicLongArray   
  4. AtomicReference  等等 不一一列举
  
-### 原子操作工具类的原理
-   CAS原理
+### 原子操作工具类的原理 
+   CAS
+   
  
 ## 并发容器
 1. ConcurrenthashMap   
@@ -75,11 +77,18 @@ volatile关键字的语义（可见性）
 2. CyclicBarrier	
 3. Semaphore
 4. Condition
+5. Exchange
 
-## Lock free 实现和使用
- CAS指令
 
-## 并发设计模式
+## 锁优化
+1. 锁分离(读写分离)
+2. 缩小锁范围 
+3. 缩小锁粒度 ConcurrentHashMap
+4. 锁粗化
+
+ 
+
+## 并发设计模式和通用准则
 脱离java语言和JVM平台 从更广泛的计算机领域视角看并发与并行编程，并发编程一些通用模式的总结 
 [抄自维基百科](https://en.wikipedia.org/wiki/Concurrency_pattern)   
 1. Read write lock pattern     
@@ -91,10 +100,19 @@ volatile关键字的语义（可见性）
 7. Immutability  
 8. 不一一列举    
 
+### 并发编程三大定律 
+1.Amdahl定律   
+2.Gustafson定律  
+3.Sun-Ni定律  
 
-**并发设计模式参考资料**   
-1. [Patterns for Concurrent, Parallel, and Distributed Systems] (http://www.cs.wustl.edu/~schmidt/patterns-ace.html)  
-2. [Concurrency talk given at Scaleconf] (http://shairosenfeld.com/concurrency.html)
+
+**参考资料**   
+1.[阿里Java并发编程培训](http://wenku.baidu.com/link?url=LR9AGCKKiyMhHKGCG60XrlqtMWTr3-GBVcgyMWjN2ro6d2Vid36nSQ37Re4dhMmq2bs7Udqf9qDQs1OwLn0Sma3Q0e5UHhkQ-ujxnABHXU3)
+
+2.[The Java Memory Model 站点](http://www.cs.umd.edu/~pugh/java/memoryModel/)
+
+[Patterns for Concurrent, Parallel, and Distributed Systems] (http://www.cs.wustl.edu/~schmidt/patterns-ace.html)  
+[Concurrency talk given at Scaleconf] (http://shairosenfeld.com/concurrency.html)
 
 
 

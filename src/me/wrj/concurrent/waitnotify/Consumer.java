@@ -27,7 +27,7 @@ public class Consumer implements Runnable{
 					e.printStackTrace();
 				}
 				
-				container.notify();
+				container.notifyAll();
 			}
 		}
 		

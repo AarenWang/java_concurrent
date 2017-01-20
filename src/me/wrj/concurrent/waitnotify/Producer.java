@@ -29,7 +29,7 @@ public class Producer implements Runnable{
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-				container.notify();
+				container.notifyAll();
 			}
 	    }
 		

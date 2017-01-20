@@ -39,11 +39,44 @@
   实现生产者和消费者
 
 
+## 多线程概念
+条件竞争
+  概念
+临界区
+  概念
+线程安全
+  概念
+  级别
+逃逸
+  线程安全必须满足的逃逸规则
+不可变对象
+  
+内存模型
+  JVM规范是对语言语法规则的约定和语言运行机器的一种抽象
+  JVM抽象机器模型与实际机器模型
+
 ## JUC线程池和任务执行框架
 ### Executor框架
 1. ThreadPoolExecutor   
 2. ScheduledThreadPoolExecutor   
 3. ExecutorService
+4. Executor
+
+Executor类型 | 特点 | 使用场合 
+---------- | --------  |  ------  
+ThreadPoolExecutor | 特点| 使用场合
+SingleThreadExecutor | 特点| 使用场合
+FixedThreadPool | 特点| 使用场合
+CachedThreadPool  | 特点| 使用场合
+ScheduledThreadPoolExecutor   | 特点| 使用场合   
+
+ThreadPoolExecutor四大
+.corePool：核心线程池的大小。   
+.maximumPool：最大线程池的大小。   
+.BlockingQueue：用来暂时保存任务的工作队列。   
+.RejectedExecutionHandler：当Thread-PoolExecutor已经关闭或ThreadPoolExecu-tor已经饱和时（达到了最大线程池大小且工作队列已满），execute()方法将要调用的Handler。
+
+### Future实现原理
 
 ### Fork Join 任务并行执行框架
  [Doug Lea 原始Fork Join框架论文](http://gee.cs.oswego.edu/dl/papers/fj.pdf)   
@@ -65,10 +98,9 @@
    
  
 ## 并发容器
-1. ConcurrenthashMap   
-2. ConcurrentLinkedDeque    
-3. ConcurrentLinkedQueue 
-4. ConcurrentSkipListMap   
+1. ConcurrentHashMap     
+2. ConcurrentLinkedQueue  Simple, Fast, and Practical Non-Blocking and Blocking Concurrent Queue Algor
+3. ConcurrentSkipListMap   
 
 ## 阻塞容器 
 1. AbstractQueuedSynchronizer 基于FIFO对列的阻塞锁和同步工具类框架  
@@ -114,11 +146,13 @@
 1.[阿里Java并发编程培训](http://wenku.baidu.com/link?url=LR9AGCKKiyMhHKGCG60XrlqtMWTr3-GBVcgyMWjN2ro6d2Vid36nSQ37Re4dhMmq2bs7Udqf9qDQs1OwLn0Sma3Q0e5UHhkQ-ujxnABHXU3)   
 2.[The Java Memory Model 站点](http://www.cs.umd.edu/~pugh/java/memoryModel/)  
 3.[Patterns for Concurrent, Parallel, and Distributed Systems] (http://www.cs.wustl.edu/~schmidt/patterns-ace.html)  
-
 4.[Concurrency talk given at Scaleconf] (http://shairosenfeld.com/concurrency.html)  
 5.[Java并发编程艺术](http://www.duokan.com/book/94743)    
 6.[实战Java高并发程序设计](http://www.duokan.com/book/118009)   
-7.[Java 7 concurrency cookbook](http://ifeve.com/java-7-concurrency-cookbook/)
+7.[Java 7 concurrency cookbook](http://ifeve.com/java-7-concurrency-cookbook/)  
+8.[并发系列文章](http://tutorials.jenkov.com/java-concurrency/index.html)  
+9.[Java Memory Model Pragmatics (transcript)](https://shipilev.net/blog/2014/jmm-pragmatics/)  
+10.[java memory model](https://shipilev.net/blog/2016/close-encounters-of-jmm-kind/)   
 
 
 

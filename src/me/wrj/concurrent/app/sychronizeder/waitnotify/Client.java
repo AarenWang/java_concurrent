@@ -1,4 +1,4 @@
-package me.wrj.concurrent.waitnotify;
+package me.wrj.concurrent.app.sychronizeder.waitnotify;
 
 public class Client {
 

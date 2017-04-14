@@ -91,7 +91,9 @@ ThreadPoolExecutor四大
  1. AtomicInteger  
  2. AtomicLong  
  3. AtomicLongArray   
- 4. AtomicReference  等等 不一一列举
+ 4. AtomicReference  
+ 5. AtomicReferenceFieldUpdater
+ 6.   
  
 ### 原子操作工具类的原理 
    CAS
